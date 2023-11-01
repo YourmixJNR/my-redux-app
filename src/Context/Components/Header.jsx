@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom';
+import Switch from './Switch';
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
         </li>
         <li>
             <Link to="/about">About</Link>
+        </li>
+        <li>
+            <Switch />
         </li>
       </ul>
       <Outlet />
