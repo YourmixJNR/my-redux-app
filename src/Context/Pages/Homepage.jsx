@@ -4,7 +4,7 @@ import Switch from '../Components/Switch'
 const Homepage = () => {
   return (
     <div>
-      <Switch />
+      <h1>Hello Home Page</h1>
     </div>
   )
 }
