@@ -21,15 +21,15 @@ function App() {
 
   return (
     <>
-      <ThemeContext.Provider value={{theme, toggleTheme}}>
-          <BrowserRouter>
-            <Routes>
-              <Route path='/' element={<Header />}>
-                <Route index element={<Homepage />} />
-                <Route path='/about' element={<About />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
+      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Header />}>
+              <Route index element={<Homepage />} />
+              <Route path='/about' element={<About />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </ThemeContext.Provider>
     </>
   );
