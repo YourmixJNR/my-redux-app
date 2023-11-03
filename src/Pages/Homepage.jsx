@@ -1,5 +1,4 @@
 import React from 'react'
-import Switch from '../Components/Switch'
 
 const Homepage = () => {
   return (

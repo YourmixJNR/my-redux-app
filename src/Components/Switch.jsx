@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import ReactSwitch from 'react-switch';
-import { ThemeContext } from '../ThemeContext';
+import { ThemeContext } from '../Context/ThemeContext';
 
 const Switch = () => {
   const {theme, toggleTheme} = useContext(ThemeContext);
   return (
     <div>
       <ReactSwitch 
-      // onChange={toggleTheme}
-      // checked={theme === "dark"}
-      // className="react-switch"
+        onChange={toggleTheme}
+        checked={theme === "dark"}
+        className="react-switch"
       />
     </div>
   )
