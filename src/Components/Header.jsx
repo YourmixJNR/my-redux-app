@@ -13,6 +13,9 @@ const Header = () => {
             <Link to="/about">About</Link>
         </li>
         <li>
+          <Link to="/contextapi">Context API</Link>
+        </li>
+        <li>
             <Switch />
         </li>
       </ul>

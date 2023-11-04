@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import { ThemeContext } from "./Context/ThemeContext";
 import Homepage from './Pages/Homepage';
+import ContextAPI from "./Pages/ContextAPI";
 import About from './Pages/About';
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Header />}>
               <Route index element={<Homepage />} />
+              <Route path="/contextapi" element={<ContextAPI />} />
               <Route path='/about' element={<About />} />
             </Route>
           </Routes>
